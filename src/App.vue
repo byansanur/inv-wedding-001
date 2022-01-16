@@ -2,15 +2,33 @@
   <v-app>
     <v-main>
       <Top/>
-      <HelloWorld/>
+      <br/>
+      <br/>
+      <Opening/>
+      <br/>
+      <br/>
+      <Mempelai/>
+      <br/>
+      <br/>
+      <EventDate/>
+      <br/>
+      <br/>
+      <Story/>
+      <br/>
+      <br/>
+      <Gallery/>
     </v-main>
     <BottomNav/>
   </v-app>
 </template>
 
 <script>
-import Top from './components/Top';
-import HelloWorld from './components/HelloWorld';
+import Top from './components/Top'
+import Opening from './components/Openning'
+import Mempelai from './components/Mempelai'
+import EventDate from './components/EventDate'
+import Story from './components/Story'
+import Gallery from './components/Gallery'
 import BottomNav from './components/BottomNav'
 
 export default {
@@ -18,12 +36,12 @@ export default {
 
   components: {
     Top,
-    HelloWorld,
+    Opening,
+    Mempelai,
+    EventDate,
+    Story,
+    Gallery,
     BottomNav
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
