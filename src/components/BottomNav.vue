@@ -12,26 +12,26 @@
     fixed
     hide-on-scroll
   >
-    <v-btn large plain>
-      <span>Video</span>
+    <v-btn large plain @click="clickToHome">
+      <span>Home</span>
 
       <v-icon>mdi-television-play</v-icon>
     </v-btn>
 
-    <v-btn large plain>
-      <span>Music</span>
+    <v-btn large plain @click="clickToWho">
+      <span>Who</span>
 
       <v-icon>mdi-music-note</v-icon>
     </v-btn>
 
-    <v-btn large plain>
-      <span>Book</span>
+    <v-btn large plain @click="clickToDate">
+      <span>Date</span>
 
       <v-icon>mdi-book</v-icon>
     </v-btn>
 
-    <v-btn large plain>
-      <span>Image</span>
+    <v-btn large plain @click="clickToStory">
+      <span>Story</span>
 
       <v-icon>mdi-image</v-icon>
     </v-btn>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+// import Home from './Openning.vue'
 export default {
   name: "BottomNav",
   data: () => ({
@@ -54,6 +55,19 @@ export default {
         case 3: return 'indigo'
         default: return 'blue-grey'
       }
+    }
+  },
+  methods: {
+    clickToHome() {
+    },
+    clickToWho() {
+
+    },
+    clickToDate() {
+
+    },
+    clickToStory() {
+
     }
   }
 }
